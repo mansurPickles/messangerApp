@@ -35,10 +35,12 @@ class RegisterViewController: UIViewController {
         //TODO: Set up a new user on our Firbase database
         Auth.auth().createUser(withEmail: emailTextfield.text!, password: passwordTextfield.text!) { (user, error) in
             if error != nil{
+                ProgressHUD.showError("Unable to Register, try again!")
                 print(error!)
             }
             else {
                 //success
+                ProgressHUD.showSuccess("Success, Redirecting You Now")
                 print("Registration Successful")
                 self.performSegue(withIdentifier: "goToChat", sender:self)
             }

@@ -29,6 +29,7 @@ class LogInViewController: UIViewController {
         Auth.auth().signIn(withEmail: emailTextfield.text!, password: passwordTextfield.text!) { (user, error) in
             
             if error != nil{
+                ProgressHUD.showError("Login Error")
                 print("login error")
             }
             else {

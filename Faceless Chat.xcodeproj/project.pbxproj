@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -197,14 +197,13 @@
 				TargetAttributes = {
 					6321A9B51B94EBA10053D2E7 = {
 						CreatedOnToolsVersion = 6.4;
-						DevelopmentTeam = 7GND7Y6VJ7;
 						LastSwiftMigration = 1010;
 						ProvisioningStyle = Automatic;
 					};
 				};
 			};
-			buildConfigurationList = 6321A9B11B94EBA10053D2E7 /* Build configuration list for PBXProject "Flash Chat" */;
-			compatibilityVersion = "Xcode 3.2";
+			buildConfigurationList = 6321A9B11B94EBA10053D2E7 /* Build configuration list for PBXProject "Faceless Chat" */;
+			compatibilityVersion = "Xcode 10.0";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -412,7 +411,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -431,7 +431,10 @@
 				);
 				INFOPLIST_FILE = "Flash Chat/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.brandonluong.Flash-Chat";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Flash Chat/Flash Chat-Bridging-Header.h";
@@ -455,7 +458,10 @@
 				);
 				INFOPLIST_FILE = "Flash Chat/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.brandonluong.Flash-Chat";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Flash Chat/Flash Chat-Bridging-Header.h";
@@ -467,7 +473,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		6321A9B11B94EBA10053D2E7 /* Build configuration list for PBXProject "Flash Chat" */ = {
+		6321A9B11B94EBA10053D2E7 /* Build configuration list for PBXProject "Faceless Chat" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6321A9D31B94EBA10053D2E7 /* Debug */,
